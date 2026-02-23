@@ -31,14 +31,18 @@ const HeroSection = () => {
           </p>
 
           <div className="flex flex-wrap gap-4 mb-12">
-            <Button variant="hero" size="lg" className="text-base">
-              <Phone className="w-5 h-5" />
-              Call Now
-            </Button>
-            <Button variant="heroOutline" size="lg" className="text-base">
-              <MapPin className="w-5 h-5" />
-              Visit Store
-            </Button>
+            <a href="tel:+919745555974">
+              <Button variant="hero" size="lg" className="text-base">
+                <Phone className="w-5 h-5" />
+                Call Now
+              </Button>
+            </a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Kodakara+Thrissur+Kerala+India" target="_blank" rel="noopener noreferrer">
+              <Button variant="heroOutline" size="lg" className="text-base">
+                <MapPin className="w-5 h-5" />
+                Visit Store
+              </Button>
+            </a>
           </div>
 
           <div className="flex flex-wrap gap-6 text-primary-foreground/60 text-sm">

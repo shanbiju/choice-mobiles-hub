@@ -1,3 +1,4 @@
+import servicesBg from "@/assets/services-bg.jpg";
 import { Smartphone, Headphones, CreditCard, Wifi, Wrench, TabletSmartphone } from "lucide-react";
 
 const services = [
@@ -35,8 +36,13 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section id="services" className="py-20 bg-background">
-      <div className="container">
+    <section id="services" className="relative py-20 overflow-hidden">
+      <div className="absolute inset-0">
+        <img src={servicesBg} alt="" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-background/90 backdrop-blur-sm" />
+      </div>
+
+      <div className="container relative z-10">
         <div className="text-center mb-14">
           <span className="text-sm font-semibold tracking-widest uppercase text-accent">What We Offer</span>
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mt-2">Our Services</h2>

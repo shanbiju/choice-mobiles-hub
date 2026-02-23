@@ -38,10 +38,12 @@ const Navbar = () => {
               {l.label}
             </a>
           ))}
-          <Button variant="hero" size="sm">
-            <Phone className="w-4 h-4" />
-            Call Now
-          </Button>
+          <a href="tel:+919745555974">
+            <Button variant="hero" size="sm">
+              <Phone className="w-4 h-4" />
+              Call Now
+            </Button>
+          </a>
         </div>
 
         {/* Mobile toggle */}
@@ -68,10 +70,12 @@ const Navbar = () => {
                 {l.label}
               </a>
             ))}
-            <Button variant="hero" size="sm" className="w-fit mt-2">
-              <Phone className="w-4 h-4" />
-              Call Now
-            </Button>
+            <a href="tel:+919745555974">
+              <Button variant="hero" size="sm" className="w-fit mt-2">
+                <Phone className="w-4 h-4" />
+                Call Now
+              </Button>
+            </a>
           </div>
         </div>
       )}
